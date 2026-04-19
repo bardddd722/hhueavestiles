@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>探寻历史印记：社会实践文物成果展</title>
+    <style>
+        /* 基础样式：极简黑白灰 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        /* 顶部标题区 */
+        header {
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 500;
+            letter-spacing: 4px;
+        }
+        header p {
+            margin: 15px 0 0;
+            color: #888;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* 内容容器 */
+        .main-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* 文物行布局 */
+        .relic-row {
+            display: flex;
+            flex-wrap: wrap; /* 保证兼容性 */
+            margin-bottom: 100px;
+            opacity: 0; /* 配合动画 */
+            transform: translateX(-20px);
+            animation: fadeInRight 1s ease forwards;
+        }
+
+        /* 逐个出现的动画 */
+        @keyframes fadeInRight {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* 图片区域 */
+        .relic-visual {
+            flex: 1;
+            min-width: 320px;
+            max-width: 500px;
+        }
+        .relic-visual img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 2px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        /* 文字信息区域 */
+        .relic-content {
+            flex: 1;
+            min-width: 320px;
+            padding: 20px 0 20px 60px;
+            box-sizing: border-box;
+        }
+
+        /* 标题样式 */
+        .title-group {
+            margin-bottom: 30px;
+            border-left: 4px solid #333;
+            padding-left: 20px;
+        }
+        .title-en {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0;
+            color: #000;
+        }
+        .title-zh {
+            font-size: 20px;
+            margin: 5px 0 0;
+            color: #666;
+        }
+
+        /* 文本块样式 */
+        .text-block {
+            margin-bottom: 25px;
+        }
+        .desc-en {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .desc-zh {
+            font-size: 16px;
+            color: #555;
+            text-align: justify;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 850px) {
+            .relic-content {
+                padding-left: 0;
+                padding-top: 40px;
+            }
+            .relic-visual {
+                max-width: 100%;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            border-top: 1px solid #f0f0f0;
+            color: #bbb;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>探寻历史印记：社会实践文物成果展</h1>
+        <p>Exploring the Marks of History: Cultural Relics Exhibition</p>
+    </header>
+
+    <div class="main-container">
+
+        <div class="relic-row" style="animation-delay: 0.2s;">
+            <div class="relic-visual">
+                <img src="Eaves Tiles.jpg" alt="Eaves Tiles">
+            </div>
+            <div class="relic-content">
+                <div class="title-group">
+                    <h2 class="title-en">Eaves Tiles</h2>
+                    <h3 class="title-zh">瓦当</h3>
+                </div>
+                <div class="text-block">
+                    <p class="desc-en">Eaves Tiles (Wadang) were roof components used on important ancient Chinese buildings like palaces, government offices, and temples. They protected the eaves while adding decoration. At the Jiankang City site, four main patterns were found on Wadang: cloud, human face, animal face, and lotus. The human-face design is particularly rare and distinctive, rarely seen elsewhere in China.</p>
+                    <p class="desc-zh">瓦当是中国古代建筑屋檐顶端的构件，常用于宫殿、官署、寺庙等重要建筑，兼具保护屋檐与装饰美化功能。六朝时期的建康城遗址出土了大量瓦当，纹饰主要有云气纹、人面纹、兽面纹和莲花纹四种。其中人面纹瓦当尤为罕见，是六朝瓦当中最具特色的代表之一 。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relic-row" style="animation-delay: 0.4s;">
+            <div class="relic-visual">
+                <img src="pottery house.jpg" alt="Pottery House">
+            </div>
+            <div class="relic-content">
+                <div class="title-group">
+                    <h2 class="title-en">Pottery House</h2>
+                    <h3 class="title-zh">陶屋</h3>
+                </div>
+                <div class="text-block">
+                    <p class="desc-en">Pottery House, unearthed from tomb at Daishan in Nanjing, is a miniature model of residential architecture during the Eastern Jin Dynasty. It blends architectural utility with artistic expression, showcasing Neolithic dwelling styles and providing us with valuable materials for studying the house styles and daily life of the Six Dynasties.</p>
+                    <p class="desc-zh">陶屋，出土于南京岱山古墓，是东晋时期住宅建筑的微缩模型。它融合了建筑的实用性和艺术表现力，展示了新石器时代的居住风格，为我们研究六朝时期的房屋样式和日常生活提供了宝贵资料 。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relic-row" style="animation-delay: 0.6s;">
+            <div class="relic-visual">
+                <img src="Celadon Incense Bumer.jpg" alt="Celadon Incense Burner">
+            </div>
+            <div class="relic-content">
+                <div class="title-group">
+                    <h2 class="title-en">Celadon Incense Burner</h2>
+                    <h3 class="title-zh">青瓷香熏</h3>
+                </div>
+                <div class="text-block">
+                    <p class="desc-en">This is a celadon incense burner from the Eastern Jin Dynasty, unearthed from the tomb in Changgang Village, Nanjing. The upper layer is a container with multiple hollowed-out holes that facilitate the diffusion of fragrance. The lower layer is a receiving tray, and the overall design combines practicality and artistry. It has a fine texture and simple shape, making it important for studying the lifestyle of the Eastern Jin Dynasty.</p>
+                    <p class="desc-zh">这是一件东晋时期的青瓷香熏，出土于南京长岗村墓。上层为带有多个镂空孔洞的容器，便于香气的散发。下层是一个承接盘，整体设计兼具实用性与艺术性。其质地细腻，造型古朴典雅，是研究东晋时期生活风貌和陶瓷工艺的重要实物资料 。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relic-row" style="animation-delay: 0.8s;">
+            <div class="relic-visual">
+                <img src="Celadon Chicken-Head Ewer.jpg" alt="Celadon Chicken-Head Ewer">
+            </div>
+            <div class="relic-content">
+                <div class="title-group">
+                    <h2 class="title-en">Celadon Chicken-Head Ewer</h2>
+                    <h3 class="title-zh">青瓷鸡首壶</h3>
+                </div>
+                <div class="text-block">
+                    <p class="desc-en">The celadon chicken-head ewer is a representative artifact from China's Wei, Jin, and Northern and Southern Dynasties, named after its chicken-head shaped spout. It was used for water drawing and wine storage. Its appearance reflects the maturity of celadon firing technology and witnesses cultural exchanges during that period.</p>
+                    <p class="desc-zh">青瓷鸡首壶是中国魏晋南北朝时期的代表性青瓷器物，因壶嘴塑成鸡首形状而得名。它既用于日常汲水、盛酒，又因鸡象征吉祥而具有深厚文化内涵。它的出现反映了当时青瓷技术的成熟，也是中外文化交流的见证 。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relic-row" style="animation-delay: 1s;">
+            <div class="relic-visual">
+                <img src="Bronze Buddha Statues.jpg" alt="Bronze Buddha Statues">
+            </div>
+            <div class="relic-content">
+                <div class="title-group">
+                    <h2 class="title-en">Bronze Buddha Statues</h2>
+                    <h3 class="title-zh">南朝铜佛像</h3>
+                </div>
+                <div class="text-block">
+                    <p class="desc-en">Unearthed from Nanjing Deji Plaza, these statues boast diverse shapes and exquisite craftsmanship. They demonstrate the superb statue-making skills of the Southern Dynasties and serve as evidence of the prevalence of Buddhist culture and Sino-foreign cultural integration in the capital area.</p>
+                    <p class="desc-zh">南朝铜佛像出土于南京德基广场工地。这些佛像造型丰富多样，线条流畅，工艺精湛。它们直观地展现了南朝高超的造像技艺，并有力地佐证了当时佛教文化的盛行与中外文化的交融痕迹。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relic-row" style="animation-delay: 1.2s;">
+            <div class="relic-visual">
+                <img src="Bronze Curtain Components with Lotus Design.jpg" alt="Bronze Curtain Components">
+            </div>
+            <div class="relic-content">
+                <div class="title-group">
+                    <h2 class="title-en">Bronze Curtain Components with Lotus Design</h2>
+                    <h3 class="title-zh">莲花纹帷帐铜构件</h3>
+                </div>
+                <div class="text-block">
+                    <p class="desc-en">Unearthed from Qinhuai River, this was a key structural piece for noble canopies during the Southern Dynasties. Decorated with lotus and honeysuckle motifs, it aligned with the religious aesthetics of the time. These ornate canopies were exclusive to the elite, showcasing the social hierarchy of the Six Dynasties.</p>
+                    <p class="desc-zh">莲花纹帷帐铜构件出土于南京秦淮河，是南朝时期贵族帷帐的核心构件。表面饰有精致的莲花纹与忍冬纹，这种构件曾为贵族的专属，展现了六朝门阀制度下的社会等级 。</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 社会实践团队 | 六朝文物之美专题展示
+    </footer>
+
+</body>
+</html>
